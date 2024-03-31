@@ -1,0 +1,143 @@
+.card {
+    position: relative;
+    width: 1254px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    display: flex;
+    top: 100px;
+  }
+  
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  h2, p {
+    margin: 0;
+  }
+  
+  .gif-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card:hover .gif-container {
+    opacity: 1;
+  }
+
+  #background-video {
+    position: fixed;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    object-fit: cover; 
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .overlay-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .deskripsi {
+    position: absolute;
+    top: 130px;
+    left: 1;
+    color: white;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+  }
+
+  .pemeran{
+      position: absolute;
+      top: 370px;
+      left: 1;
+      color: white;
+      text-align: justify;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+  }
+
+  .MatthewMcConaughey{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    color: white;
+  }
+
+  .border1{
+    position: absolute;
+    height: 300px;
+    width: 126px;
+    border: 2px solid grey;
+  }
+
+  .border2{
+    position: absolute;
+    height: 300px;
+    width: 126px;
+    left: 170px;
+    border: 2px solid grey;
+  }
+
+  .border3{
+    position: absolute;
+    height: 300px;
+    width: 126px;
+    left: 340px;
+    border: 2px solid grey;
+  }
+
+  .border4{
+    position: absolute;
+    height: 300px;
+    width: 126px;
+    left: 515px;
+    border: 2px solid grey;
+  }
+
+  .border5{
+    position: absolute;
+    height: 300px;
+    width: 126px;
+    left: 685px;
+    border: 2px solid grey;
+  }
+
+  .border6{
+    position: absolute;
+    height: 300px;
+    width: 126px;
+    left: 850px;
+    border: 2px solid grey;
+  }

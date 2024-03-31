@@ -1,0 +1,117 @@
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #fbdada;
+	--third-color: #e9eef2;
+	--fourth-color: #fde2e2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--fourth-color);
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(255, 255, 255, 0.4);
+	border-radius: 25px;
+}
+.login h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	text-align: center;
+}
+.login .user {
+	position: relative;
+}
+.login .user input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin: 0 0 30px 0;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.login .user label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	pointer-events: visibleFill;
+	transition: 0.5s;
+}
+
+
+.login .user input:focus ~ label,
+.login .user input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: var(--third-color);
+	font-size: 12px;
+}
+
+.login form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--third-color);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transform: 0.5s;
+    margin: 40px 0 0 0;
+    letter-spacing: 4px;
+    display: flex; 
+    justify-content: center; 
+}
+
+.login form a:hover {
+    background: var(--third-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    box-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);
+}
+
+.login form a span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%; 
+    opacity: 0; 
+}
+
+.login form a:hover span {
+    opacity: 1; 
+}
+

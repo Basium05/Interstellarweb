@@ -1,0 +1,109 @@
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #fbdada;
+	--third-color: #e9eef2;
+	--fourth-color: #fde2e2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--fourth-color);
+   
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.word{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+h1{
+    letter-spacing: 10px;
+    font-size: xx-large;
+    margin-bottom: 1;
+    text-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);  
+}
+h4{
+    margin-top: 0;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);
+}
+.btn{
+    border-radius: 20px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);
+}
+@media screen and (max-width: 280px) {
+    h1{
+        letter-spacing: 2px;
+        font-size: large;
+        margin-bottom: 1;
+        text-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);  
+    }
+    h4{
+        font-size: x-small;
+        margin-inline-start: 20%;
+        margin-top: 0;
+        letter-spacing: 1px;
+        text-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);
+    }
+    .btn{
+        border-radius: 20px;
+        width: 75px;
+        height: 22px;
+        border: none;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 375px) {
+    h1{
+        letter-spacing: 2px;
+        font-size: large;
+        margin-bottom: 1;
+        text-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);  
+    }
+    h4{
+        font-size: x-small;
+        margin-inline-start: 20%;
+        margin-top: 0;
+        letter-spacing: 1px;
+        text-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color);
+    }
+    .btn{
+        border-radius: 20px;
+        width: 75px;
+        height: 22px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
